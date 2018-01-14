@@ -133,7 +133,17 @@ void loop() {
 
   // add code for buttons here 
 
+  // adds a minute per every time the button is pushed
+  delay(1000); // rereads the button input every second
+  if(digitalRead(A6) == 1){
+    min_num = min_num + 1;
+  }
 
+  // adds an hour per every time the button is pushed
+  delay(1000);
+  if(digitalRead(A5) == 1){
+    hour_num = hour_num + 1;
+  }
   
 }
 
